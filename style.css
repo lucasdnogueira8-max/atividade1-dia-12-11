@@ -1,0 +1,112 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f8;
+}
+
+/* Menu */
+header {
+    background-color: #203b56;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Parte inicial */
+.inicio {
+    padding: 30px;
+}
+
+.inicio h1 {
+    color: #203b56;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    color: #555;
+}
+
+/* Cartões dos serviços */
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.card h3 {
+    color: #203b56;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: block;
+    background-color: #285779;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Efeito do botão */
+.card a:hover {
+    background-color: #142d45;
+}
+
+/* Rodapé */
+footer {
+    background-color: #142d45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+}
